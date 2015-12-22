@@ -1,7 +1,7 @@
-#N canvas 0 25 1264 718 36;
+#N canvas 57 23 1264 718 36;
 #X obj 17 -195 afro-beat_machine;
-#X msg 666 -248 bpm;
-#X obj 666 -304 r $estado_string;
+#X msg 870 -252 effects;
+#X obj 870 -308 r $estado_string;
 #X msg 38 -257 excuse_o;
 #X obj 39 -306 r $music_name;
 #X msg 24 213 \; ratinhos cosinesum 256 0.2 -0.2 0.2 -0.2 0.2 -0.2
@@ -9,5 +9,8 @@
 #X text 14 -355 http://jarbasjacome.wordpress.com;
 #X text 17 -388 Afrobeat Machine \, by Jabah Pureza. LICENSE: GPL v3.0
 ;
+#X obj 359 -308 inlet;
+#X obj 355 -250 s selecionada;
 #X connect 2 0 1 0;
 #X connect 4 0 3 0;
+#X connect 8 0 9 0;
